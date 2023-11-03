@@ -85,6 +85,8 @@ a:hover {
 .giraffelitis-icon {
    height: 80px;
    width: 80px;
+   background-image: url("../assets/Giraffe-184x184-Profile.png");
+   background-size: 80px 80px;
 }
 
 .content-wrapper {
