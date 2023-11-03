@@ -1,0 +1,225 @@
+html, body{
+   padding: 0;
+   margin: 0;
+   font-family: Serif;
+   background-color: #0c0c0c;
+   color: white;
+}
+
+h1, h2, h3, h4, p, ul {
+	margin: 0;
+}
+
+h2 {
+   font-size: 40px;
+}
+
+p {
+   font-size: 18px;
+}
+
+section {
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.section {
+   max-width: 1080px;
+   padding: 40px;
+   justify-content: center;
+   border-bottom: 3px solid #1a1919;
+   border-bottom-left-radius: 75px;
+   border-bottom-right-radius: 75px;
+}
+
+.home {
+   display: flex;
+   justify-content: space-between;
+}
+
+.home h1 {
+   margin: 22px 0 0 15px;
+}
+
+.nav-elements {
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar {
+   position: fixed;
+   padding: 0;
+   margin: 0;
+   width: 100%;
+   background-color: #1a1919;
+   z-index: 1;
+   opacity: 1;
+}
+
+/* used to target just .navbar a {} */
+a {
+   color: white;
+   text-decoration: none;
+}
+
+a:hover {
+   color: grey;
+   transition: 0.3s;
+}
+
+.navbar ul {
+   float: right;
+   margin-right: 20px;
+   margin-top: 22px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.nav-offset {
+   height: 80px;
+}
+
+.giraffelitis-icon {
+   height: 80px;
+   width: 80px;
+}
+
+.content-wrapper {
+   max-width: 1040px;
+   margin: auto;
+   height: 100%;
+}
+
+.heading-wrapper {
+   padding-bottom: 10px;
+}
+
+iframe {
+   width: 1040px;
+   height: 600px;
+}
+
+@media screen and (max-width: 1024px) {
+   iframe {
+      width: 580px;
+   }
+}
+
+footer {
+   margin: 40px auto 40px auto;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 100%;
+}
+
+.email {
+   display: flex;
+   padding: 24px;
+}
+
+.email-icon {
+   padding-right: 10px;
+}
+
+
+/* Tabs */
+
+
+.tabbed {
+   overflow-x: hidden; /* so we could easily hide the radio inputs */
+   margin: 10px 0;
+   padding-bottom: 16px;
+   /*border-bottom: 1px solid #ccc;*/
+}
+
+.tabbed [type="radio"] {
+   /* hiding the inputs */
+   display: none;
+}
+
+.tabs {
+   margin-top: 10px;
+   display: flex;
+   align-items: stretch;
+   list-style: none;
+   padding: 0;
+   border-bottom: 1px solid #ccc;
+}
+
+.tab {
+}
+
+.tab > label {
+   display: block;
+   margin-bottom: -1px;
+   padding: 12px 15px;
+   border: 1px solid #ccc;
+   background: #1a1919;
+   color: white;
+   font-size: 12px; 
+   font-weight: 600;
+   letter-spacing: 1px;
+   cursor: pointer;  
+   transition: all 0.3s;
+}
+.tab:hover label {
+   border-top-color: #333;
+   color: #333;
+}
+
+.tab-content {
+   margin-top: 10px;
+   display: none;
+   color: white;
+}
+
+/* As we cannot replace the numbers with variables or calls to element properties, the number of this selector parts is our tab count limit */
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label,
+.tabbed [type="radio"]:nth-of-type(6):checked ~ .tabs .tab:nth-of-type(6) label,
+.tabbed [type="radio"]:nth-of-type(7):checked ~ .tabs .tab:nth-of-type(7) label {
+   border-bottom-color: #fff;
+   /*border-top-color: #422bc9;*/
+   background: grey;
+   color: #222;
+   transition: background 0.5s, border-bottom-color 0.5s, border-top-color 0.5s, color 0.5s;
+}
+
+.tabbed [type="radio"]:nth-of-type(1):checked ~ .tab-content:nth-of-type(1),
+.tabbed [type="radio"]:nth-of-type(2):checked ~ .tab-content:nth-of-type(2),
+.tabbed [type="radio"]:nth-of-type(3):checked ~ .tab-content:nth-of-type(3),
+.tabbed [type="radio"]:nth-of-type(4):checked ~ .tab-content:nth-of-type(4),
+.tabbed [type="radio"]:nth-of-type(5):checked ~ .tab-content:nth-of-type(5),
+.tabbed [type="radio"]:nth-of-type(6):checked ~ .tab-content:nth-of-type(6) {
+   display: flex;
+}
+
+/*.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(6):checked ~ .tabs .tab:nth-of-type(6) label,
+.section-nighttime-runners .tabbed [type="radio"]:nth-of-type(7):checked ~ .tabs .tab:nth-of-type(7) label {
+   border-bottom-color: #fafafa;
+   background: #fafafa;
+}
+
+.section-submerge .tabbed [type="radio"]:nth-of-type(1):checked ~ .tabs .tab:nth-of-type(1) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(2):checked ~ .tabs .tab:nth-of-type(2) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(3):checked ~ .tabs .tab:nth-of-type(3) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(4):checked ~ .tabs .tab:nth-of-type(4) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(5):checked ~ .tabs .tab:nth-of-type(5) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(6):checked ~ .tabs .tab:nth-of-type(6) label,
+.section-submerge .tabbed [type="radio"]:nth-of-type(7):checked ~ .tabs .tab:nth-of-type(7) label {
+   border-bottom-color: #fafafa;
+   background: #fafafa;
+}*/
