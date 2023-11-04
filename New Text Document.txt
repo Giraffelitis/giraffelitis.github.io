@@ -28,12 +28,13 @@
 	<section class="section">
 		<div class="content-wrapper">
 			<div class="heading-wrapper">
-			  <h2 class=""><a href="https://paceabbott.gg/?p=30">Unreal BP vs CPP</a></h2>
-			  <br>
+				<h2 class=""><a href="https://paceabbott.gg/?p=30">The Grave Escape</a></h2>
+				<br>
+				<p><i>April 8, 2023</i></p>
 			</div>
-			<iframe src="https://www.youtube.com/watch?v=_VmsUXQbzhY&ab" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe src="https://youtu.be/_VmsUXQbzhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 		</div>
-		<div>
+		<div class="feature-content">
 		  <p>This is a small project I put together in collaboration with Anirudh Kumar who attends CG Spectrum with me. We are trying to find useful, fair, and comparable tests to run in Unreal Engine to determine the performance impacts of using Blueprints vs C++. The intent is to have a series of videos each one showing a different comparison test per video. Our first video shows the test in PIE which we know isn’t optimal but gives the best shock factor to help draw you attention to the numbers for future tests. In video Two we will transition from PIE to Shipping Builds and then each subsequent video will be shown exclusively using a shipping build. We have also made the repo for this public for everyone to have access a perform their own tests with. Here is a link to the repo: https://github.com/Giraffelitis/BPvCPP</p>
 		</div>
 	</section>
