@@ -383,32 +383,3 @@ body .gist .gist-meta a {
 body .gist .gist-data .pl-s .pl-s1 {
   color: #a5c261
 }
-
-/* Flexbox formatting*/
-.flex-container {
-  /* We first create a flex layout context */
-  display: flex;
-  /* Then we define the flow direction and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
-  
-  flex-flow: column nowrap;
-  flex: 2;
-  gap: 20px 20px; /* row-gap column gap */
-  
-  /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
-  
-  padding-top: 20px;
-  padding-left: 250px;
-  padding-right: 250px;
-  padding-bottom: 20px;
-	
-  list-style: none;
-}
-
-.flex.items{
-	align-self: center;
-}
